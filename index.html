@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Warung Neda</title>
+<style>
+/* Global */
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f5f6fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #d8e2dc;
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+header h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #1d3557;
+}
+
+header p {
+    margin-top: 12px;
+    font-size: 18px;
+    color: #457b9d;
+}
+
+header img {
+    width: 140px;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+/* Profil */
+section.profil {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+section.profil h2 {
+    font-size: 32px;
+    color: #1d3557;
+    margin-bottom: 20px;
+}
+
+section.profil p {
+    color: #555;
+    font-size: 17px;
+}
+
+/* Produk */
+section.produk {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+section.produk h2 {
+    font-size: 32px;
+    color: #1d3557;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.produk-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #1d3557;
+}
+
+.card-content p {
+    font-size: 15px;
+    color: #555;
+}
+
+.card-content .price {
+    margin-top: 12px;
+    font-weight: 700;
+    color: #457b9d;
+}
+
+/* Kontak */
+section.kontak {
+    background-color: #e9f5f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section.kontak h2 {
+    font-size: 28px;
+    color: #1d3557;
+    margin-bottom: 20px;
+}
+
+section.kontak p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    display:inline-block;
+    background-color:#25D366;
+    color:white;
+    padding:12px 25px;
+    border-radius:25px;
+    text-decoration:none;
+    font-weight:600;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.whatsapp-btn:hover {
+    background-color:#1ebe57;
+}
+
+/* Footer */
+footer {
+    background-color: #d8e2dc;
+    color: #1d3557;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+    margin-top: 50px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Warung Neda</h1>
+    <p>Brand Kuliner Jajanan Kekinian</p>
+    <img src="download-removebg-preview.png" alt="Logo Warung Neda">
+</header>
+
+<section class="profil">
+    <h2>Profil</h2>
+    <p>
+        Warung Neda berdiri sejak 2024 dan menghadirkan jajanan kekinian berkualitas. Dengan fokus pada rasa, kualitas bahan, dan kebersihan, kami menyajikan corndog dan waffel yang lezat dan harga terjangkau. Memberikan pengalaman menikmati camilan yang praktis dan memuaskan adalah komitmen kami untuk setiap pelanggan.
+    </p>
+</section>
+
+<section class="produk">
+    <h2>Produk Kami</h2>
+    <div class="produk-container">
+        <div class="card">
+            <img src="download (1).jpg" alt="Corndog">
+            <div class="card-content">
+                <h3>Corndog</h3>
+                <p>Corndog renyah di luar dan lembut di dalam.</p>
+                <p class="price">Rp15.000</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Krusteaz Square Belgian Waffle 3 5_8_ - 72_Case.jpg" alt="Waffel">
+            <div class="card-content">
+                <h3>Waffel</h3>
+                <p>Waffel manis dengan tekstur lembut dan nikmat.</p>
+                <p class="price">Rp15.000</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="kontak">
+    <h2>Kontak</h2>
+    <p>
+        <a href="https://wa.me/6281519177916" target="_blank" class="whatsapp-btn">Chat WhatsApp</a>
+    </p>
+    <p style="margin-top:15px;">
+        Alamat: Jl Bekasi Timur IV No. 1, Cipinang Besar Utara, Kecamatan Jatinegara, Kota Jakarta Timur
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Warung Neda</p>
+    <p>Website dibuat oleh Zaina Ameera Adelia</p>
+</footer>
+
+</body>
+</html>
